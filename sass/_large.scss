@@ -1,0 +1,94 @@
+@media (min-width: 920px){
+    .splitter{
+        display: none;
+    }
+    .wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        width: 920px;
+        height: 481px;
+        border-radius: 25px;
+    &__bill{
+        padding: 0;
+        margin-left: 48px;
+        input{
+            padding: 6px 17px;
+            margin-top: 6px;
+            width: 379px;
+        }
+        p{
+            margin: 45px  0 0 0;
+        }
+    }
+    &__select{
+        margin-left: 48px;
+        margin-top: 0;
+        width: 379px;
+        height: 152px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        .one{
+            grid-column: 1/1;
+        }
+       .tip{
+           width: 117px;
+           height: 48px;
+           transition: background-color .2s;
+           margin-right: 14px;
+    &:hover{
+        background-color: #9FE8DF;
+    }
+       }
+       .six{
+           background-color: #F3F9FA;
+           color: #547878;
+           text-align: right;
+           padding-right: 17.33px;
+       }
+    }
+    &__people{
+        margin-top: 40px;
+        margin-left: 48px;
+        padding: 0;
+        input{
+            width: 379px;
+            padding: 6px 17px;
+        }
+    }
+    &__total{
+        margin: 32px 32px 0 48px;
+        padding: 0;
+        grid-column: 2/2;
+        grid-row: 1/3;
+        width: 413px;
+        height: 417px;
+        display: flex;
+        flex-direction: column;
+        .up{
+            margin: 40px 40px 25px;
+            display: flex;
+            justify-content: space-between;
+            span{
+            font-size: 48px;
+            color: #26C2AE;
+            }
+          
+        }
+        .second{
+            margin-bottom: 122px;
+        }
+        .reset{         
+            margin: 0 40px;
+            padding: 9px 40px 9px 37px;
+            width: 333px;
+            transition: background-color .2s;
+        }
+    }
+    }
+}

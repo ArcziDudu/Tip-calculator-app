@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="splitter">
+        <img src="./images/SPLITTER.png" alt="">
+    </div>
+    <div class="wrapper">
+        <section class="wrapper__bill">
+            <p>Bill</p>
+            <div class="bill-box">
+                <input type="text" placeholder="0" class="bill-input">
+            </div>
+        </section>
+        <section class="wrapper__select">
+            <p>Select Tip %</p>
+            <button value="0.05" class="tip one">5%</button>
+            <button value="0.1" class="tip two">10%</button>
+            <button value="0.15" class="tip three">15%</button>
+            <button value="0.25" class="tip four">25%</button>
+            <button value="0.5" class="tip five">50%</button>
+           <input  class="tip six" placeholder="custom">
+        </section>
+        <section class="wrapper__people">
+            <p>Number of People</p>
+            <input  type="text" placeholder="0" class="people-input" value="1">
+        </section>
+        <section class="wrapper__total">
+            <div class="up">
+                <h1>Tip Amount <p>/ person</p></h1>
+                <span class="tip-amount">$ 0.00</span>
+            </div>
+            <div class="up second">
+                <h1>Total <p>/ person</p></h1>
+                <span class="total">$ 0.00</span>
+            </div>
+            <button class="reset">reset</button>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
